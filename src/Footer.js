@@ -1,9 +1,11 @@
 import React from "react";
 
+import "./Footer.css";
+
 export default function Footer() {
   return (
     <div className="Footer">
-      <div className="footnote">
+      <div className="footnote pt-3">
         <a
           href="https://github.com/Joellez/my-weather-app"
           id="github-link"
