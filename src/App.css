@@ -1,33 +1,17 @@
-.App {
+body {
   background: radial-gradient(
-    circle at 10% 20%,
-    rgb(147, 230, 241) 0%,
-    rgb(145, 192, 241) 45.5%
+    rgb(147, 230, 241) 30%,
+    rgb(145, 192, 241) 90%
   );
+  margin: 50px;
+  font-family: "PT Serif", serif;
+  line-height: 1.8;
 }
 
 .App a {
   text-decoration: none;
   color: black;
 }
-.App .container {
-  min-width: max-content;
-  padding-bottom: 400px;
-}
-
-.App .city-search,
-.App .location-button,
-.App .city-name,
-.App .temperature,
-.App .weather-today,
-.App .weather-info-column,
-.App .weather-forecast-day,
-.App .weather-forecast-temperatures,
-.App .footnote {
-  font-family: "PT Serif", serif;
-  line-height: 1.8;
-}
-
 .App .card-body {
   padding: 60px;
   border: 0.5px solid grey;
@@ -35,11 +19,6 @@
   max-width: 100%;
   margin: 0 auto;
   word-wrap: normal;
-}
-
-.App .weather-today {
-  font-weight: bold;
-  font-size: 17px;
 }
 
 .App .btn:hover {
