@@ -8,10 +8,10 @@ export default function Search() {
       <div className="row pb-4">
         <div className="col-6">
           <form id="my-form">
-            <div className="input-group mb-3 city-search" id="city-search-form">
+            <div className="input-group mb-3 city-search " id="city-search-form">
               <input
                 type="text"
-                className="form-control"
+                className="form-control rounded"
                 placeholder="Enter a city"
                 aria-label="City Search"
                 aria-describedby="basic-addon2"
