@@ -8,25 +8,69 @@ export default function Forecast() {
   return (
     <div className="Forecast pt-4">
       <div className="row five-day-weather">
-        <img
-          src={SingleCloud}
-          className="five-day-icons"
-          alt="single cloud"
-        ></img>
-        <img
-          src={SingleCloud}
-          className="five-day-icons"
-          alt="single cloud"
-        ></img>
-
-        <img src={Sun} className="five-day-icons" alt="sun"></img>
-        <img src={Sun} className="five-day-icons" alt="sun"></img>
-        <img
-          src={SingleCloud}
-          className="five-day-icons"
-          alt="single cloud"
-        ></img>
-        <img src={Sun} className="five-day-icons" alt="sun"></img>
+        <div className="col-2">
+          {" "}
+          <img
+            src={SingleCloud}
+            className="five-day-icons"
+            alt="single cloud"
+          ></img>
+          <div className="weather-forecast-day">Saturday</div>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-max-temp">22° </span>
+            <span className="weather-forecast-min-temp">15°</span>
+          </div>
+        </div>
+        <div className="col-2">
+          <img
+            src={SingleCloud}
+            className="five-day-icons"
+            alt="single cloud"
+          ></img>
+          <div className="weather-forecast-day">Sunday</div>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-max-temp">24° </span>
+            <span className="weather-forecast-min-temp">16°</span>
+          </div>
+        </div>
+        <div className="col-2">
+          {" "}
+          <img src={Sun} className="five-day-icons" alt="sun"></img>{" "}
+          <div className="weather-forecast-day">Monday</div>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-max-temp">24° </span>
+            <span className="weather-forecast-min-temp">18°</span>
+          </div>
+        </div>
+        <div className="col-2">
+          <img src={Sun} className="five-day-icons" alt="sun"></img>{" "}
+          <div className="weather-forecast-day">Tuesday</div>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-max-temp">25° </span>
+            <span className="weather-forecast-min-temp">17°</span>
+          </div>
+        </div>
+        <div className="col-2">
+          <img
+            src={SingleCloud}
+            className="five-day-icons"
+            alt="single cloud"
+          ></img>{" "}
+          <div className="weather-forecast-day">Wednesday</div>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-max-temp">30° </span>
+            <span className="weather-forecast-min-temp">19°</span>
+          </div>
+        </div>
+        <div className="col-2">
+          {" "}
+          <img src={Sun} className="five-day-icons" alt="sun"></img>
+          <div className="weather-forecast-day">Thursday</div>
+          <div className="weather-forecast-temperatures">
+            <span className="weather-forecast-max-temp">22° </span>
+            <span className="weather-forecast-min-temp">18°</span>
+          </div>
+        </div>
       </div>
     </div>
   );

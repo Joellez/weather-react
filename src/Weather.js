@@ -43,11 +43,11 @@ export default function Weather() {
         </div>
         <div className="col-6">
           <div className="time" id="time">
-            16:30PM
+            16:30
           </div>
           <br />
           <div className="date" id="date">
-            Wednesday 30th March 2022
+            Friday 30th March 2022
             <br />
             <br />
             <hr />

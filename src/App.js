@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <Search />
         <div className="card" />
-        <div className="card-body">
+        <div className="card-body pb-4">
           <Weather />
           <Forecast />
         </div>
