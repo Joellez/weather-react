@@ -5,4 +5,8 @@
   font-size: 18px;
 }
 
-
+@media (max-width: 576px) {
+  .Search .location-button {
+    margin-left:30px;
+  }
+}

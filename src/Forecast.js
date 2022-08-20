@@ -8,7 +8,7 @@ export default function Forecast() {
   return (
     <div className="Forecast pt-4">
       <div className="row five-day-weather">
-        <div className="col-2">
+        <div className="col-md-2">
           {" "}
           <img
             src={SingleCloud}
@@ -21,7 +21,7 @@ export default function Forecast() {
             <span className="weather-forecast-min-temp">15°</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           <img
             src={SingleCloud}
             className="five-day-icons"
@@ -33,7 +33,7 @@ export default function Forecast() {
             <span className="weather-forecast-min-temp">16°</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           {" "}
           <img src={Sun} className="five-day-icons" alt="sun"></img>{" "}
           <div className="weather-forecast-day">Monday</div>
@@ -42,7 +42,7 @@ export default function Forecast() {
             <span className="weather-forecast-min-temp">18°</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           <img src={Sun} className="five-day-icons" alt="sun"></img>{" "}
           <div className="weather-forecast-day">Tuesday</div>
           <div className="weather-forecast-temperatures">
@@ -50,7 +50,7 @@ export default function Forecast() {
             <span className="weather-forecast-min-temp">17°</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           <img
             src={SingleCloud}
             className="five-day-icons"
@@ -62,7 +62,7 @@ export default function Forecast() {
             <span className="weather-forecast-min-temp">19°</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           {" "}
           <img src={Sun} className="five-day-icons" alt="sun"></img>
           <div className="weather-forecast-day">Thursday</div>

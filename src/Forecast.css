@@ -9,10 +9,10 @@
   font-size: 17px;
   text-align: center;
 }
-.weather-forecast-temperatures {
+.Forecast .weather-forecast-temperatures {
   font-size: 15px;
 }
-.weather-forecast-min-temp {
+.Forecast .weather-forecast-min-temp {
   opacity: 0.7;
 }
 .Forecast .five-day-icons {
@@ -26,4 +26,11 @@
   padding: 5px 5px;
   margin-bottom: 8px;
   width: 75px;
+}
+
+
+@media (max-width: 576px) {
+   .Forecast .weather-forecast-temperatures{
+    margin-bottom:20px;
+  }
 }

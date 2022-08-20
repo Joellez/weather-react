@@ -7,7 +7,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6">
           <h1 className="city-name pt-1" id="city-name">
             London, GB
           </h1>
@@ -41,7 +41,7 @@ export default function Weather() {
             {"Overcast Clouds"}
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <div className="time" id="time">
             16:30
           </div>

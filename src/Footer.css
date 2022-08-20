@@ -6,3 +6,9 @@
 .Footer .footnote {
   font-size: 17px;
 }
+
+@media (max-width: 576px) {
+   .Footer .footnote{
+    margin-left:10px;
+  }
+}
