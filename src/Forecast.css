@@ -30,7 +30,11 @@
 
 
 @media (max-width: 576px) {
+  .Forecast {margin-top: -20px;
+  margin-bottom: -10px;
+margin-left: 5px;}
    .Forecast .weather-forecast-temperatures{
     margin-bottom:20px;
   }
+
 }
