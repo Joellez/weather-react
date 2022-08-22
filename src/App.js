@@ -8,15 +8,17 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Search />
-        <div className="card" />
-        <div className="card-body pb-4">
-          <Weather />
-          <Forecast />
-        </div>
-        <Footer />
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <Search />
+          <div className="card" />
+          <div className="card-body pb-4">
+            <Weather />
+            <Forecast />
+          </div>
+          <Footer />
+        </header>
+      </div>
     </div>
   );
 }
