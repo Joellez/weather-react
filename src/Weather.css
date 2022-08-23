@@ -1,3 +1,11 @@
+.Weather .btn,
+.Weather .form-control {
+  background-color: #fff solid;
+  border: 0.5px solid grey;
+  font-size: 18px;
+}
+
+
 .Weather .city-name {
   font-weight: bold;
   font-size: 21px;
@@ -34,6 +42,45 @@
   font-size: 18px;
 }
 
+.Weather .five-day-weather {
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.Weather .weather-forecast-day {
+  font-size: 17px;
+  text-align: center;
+}
+.Weather .weather-forecast-temperatures {
+  font-size: 15px;
+}
+.Weather .weather-forecast-min-temp {
+  opacity: 0.7;
+}
+.Weather .five-day-icons {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(147, 230, 241) 0%,
+    rgb(145, 192, 241) 45.5%
+  );
+  border: 0.5px dotted;
+  border-radius: 50%;
+  padding: 5px 5px;
+  margin-bottom: 8px;
+  width: 75px;
+}
+
+
+
+@media (max-width: 400px) {
+  .Weather .location-button {
+    margin-left:40px;
+  
+  }
+}
+
 @media (max-width: 576px) {
   .Weather{margin-top: -15px;}
   .Weather .city-name{
@@ -51,9 +98,13 @@ margin-bottom:-20px}
   .Weather .date-time{border-bottom: 0.5px solid rgb(183, 181, 181); margin-bottom: 20px;}
   .Weather hr.hr-2{display: none;}
   .Weather .more-weather{font-size:16px; text-align: center;}
- .Weather .wind-speed-km{margin-left: 40px;}
- .Weather .humidity{text-align: center;} 
+  .Weather .wind-speed-answer{display: inline-block;}
+ .Weather .forecast {margin-top: -20px;
+  margin-bottom: -10px;
+margin-left: 5px;}
+   .Weather .weather-forecast-temperatures{
+    margin-bottom:20px;
+  }
 }
 
-@media (max-width: 450px) {.Weather .humidity{margin-left:15px}
-}
+

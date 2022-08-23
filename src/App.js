@@ -1,6 +1,4 @@
 import Weather from "./Weather";
-import Search from "./Search";
-import Forecast from "./Forecast";
 import Footer from "./Footer";
 
 import "./App.css";
@@ -10,12 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <Search />
-          <div className="card" />
-          <div className="card-body pb-4">
             <Weather />
-            <Forecast />
-          </div>
           <Footer />
         </header>
       </div>
