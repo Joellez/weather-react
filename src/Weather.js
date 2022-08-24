@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import Cloud from "./images/cloud.png";
 import SingleCloud from "./images/singlecloud.png";
@@ -6,7 +7,26 @@ import Sun from "./images/sun.png";
 
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
+const [weatherData, setWeatherData] = useState({ready: false});
+  function handleResponse(response){
+    console.log(response.data);
+    setWeatherData({
+      ready:true,
+      temperature:response.data.main.temp,
+      humidity:response.data.main.humidity,
+      wind:response.data.wind.speed,
+      city: response.data.name,
+      description: response.data.weather[0].description,
+      //iconURL: url of icon -change all this info in html to weatherData.iconUrl etc
+      //time
+      //date
+});  
+  }
+
+  if (weatherData.ready)
+  {
+
   return (
     <div className="Weather">
       <div className="Search">
@@ -50,7 +70,7 @@ export default function Weather() {
         <div className="row">
           <div className="col-md-6">
             <h1 className="city-name pt-1" id="city-name">
-              London, GB
+              {weatherData.city}
             </h1>
             <img
               src={Cloud}
@@ -60,7 +80,7 @@ export default function Weather() {
             />
 
             <span className="temperature" id="temp-number">
-              {12}
+              {Math.round(weatherData.temperature)}
             </span>
             <span>
               <a
@@ -83,7 +103,7 @@ export default function Weather() {
               </a>
             </span>
             <hr className="hr-1" />
-            <div class="weather-description">{"Overcast Clouds"}</div>
+            <div class="weather-description text-capitalize">{weatherData.description}</div>
           </div>
           <div className="col-md-6">
             <div className="date-time">
@@ -103,13 +123,15 @@ export default function Weather() {
               className="wind-speed-answer more-weather"
               id="wind-speed-answer"
             >
-              {" 3 mph "}
-              <span className="wind-speed-km">{"(4 km/h)"}</span>
+              {" "}
+              {Math.round(weatherData.wind /1.609)} mph
+              <span className="wind-speed-km"> ({Math.round(weatherData.wind)} km/h)</span>
             </span>
             <br />
             <span className="humidity more-weather">Humidity:</span>
             <span className="humidity-answer more-weather" id="humidity-answer">
-              {" 40%"}
+              {" "}
+              {weatherData.humidity}%
             </span>
           </div>
         </div>
@@ -183,4 +205,11 @@ export default function Weather() {
       </div>
     </div>
   );
+  } else {
+const apiKey = "97250fbf79d302fc04bf2d8bd6da830f";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(handleResponse);
+
+return "Loading..."
+  }
 }
