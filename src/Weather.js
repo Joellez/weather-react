@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate"
 
 import Cloud from "./images/cloud.png";
 import SingleCloud from "./images/singlecloud.png";
@@ -10,7 +11,6 @@ import "./Weather.css";
 export default function Weather(props) {
 const [weatherData, setWeatherData] = useState({ready: false});
   function handleResponse(response){
-    console.log(response.data);
     setWeatherData({
       ready:true,
       temperature:response.data.main.temp,
@@ -20,7 +20,7 @@ const [weatherData, setWeatherData] = useState({ready: false});
       description: response.data.weather[0].description,
       //iconURL: url of icon -change all this info in html to weatherData.iconUrl etc
       //time
-      //date
+      date: new Date(response.data.dt *1000)
 });  
   }
 
@@ -107,13 +107,8 @@ const [weatherData, setWeatherData] = useState({ready: false});
           </div>
           <div className="col-md-6">
             <div className="date-time">
-              <div className="time" id="time">
-                16:30
-              </div>
-              <br />
               <div className="date" id="date">
-                Friday 30th <span className="month-year">March 2022</span>
-                <br />
+                <FormattedDate date={weatherData.date} />
                 <br />
                 <hr className="hr-2" />
               </div>
