@@ -14,7 +14,7 @@ return (
         </h1>
         <img
           src={props.data.iconUrl}
-          alt="weather icon"
+          alt={props.data.description}
           id="icon-head"
           className="icon-head"
         />
