@@ -1,7 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 
-import Cloud from "./images/cloud.png";
 import SingleCloud from "./images/singlecloud.png";
 import Sun from "./images/sun.png";
 
@@ -14,7 +13,7 @@ return (
           {props.data.city}
         </h1>
         <img
-          src={Cloud}
+          src={props.data.iconUrl}
           alt="weather icon"
           id="icon-head"
           className="icon-head"
