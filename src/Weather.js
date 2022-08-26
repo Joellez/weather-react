@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 
+import { SpinnerCircularFixed } from "spinners-react";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -86,6 +87,15 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading..."; // can add spinner external componant here if want
+    return (
+      <div>
+        Loading...
+        <br />
+        <br />
+         <SpinnerCircularFixed size={90} thickness={180} speed={100} color="rgba(0, 0, 0, 1)" secondaryColor="rgba(255, 255, 255, 1)" />
+      <br />
+      <br />
+      </div>
+    );
   }
 }
