@@ -11,7 +11,7 @@ return (
     <div className="row">
       <div className="col-md-6">
         <h1 className="city-name pt-1" id="city-name">
-          {props.data.city}
+          {props.data.city}, {props.data.countryCode}
         </h1>
         <img
           src={props.data.iconUrl}
