@@ -43,7 +43,7 @@ export default function FormattedDate(props){
       <div className="FormattedDate">
         {" "}
         <div className="time">
-          {hours}:{minutes}
+          Last updated: {hours}:{minutes}
         </div>
         <br />
         {day} {ordinalDate} {month} {year}

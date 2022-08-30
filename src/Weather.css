@@ -71,6 +71,15 @@
   width: 75px;
 }
 
+.Weather .github-link:hover,
+.Weather .linkedin-link:hover {
+  color: #fff;
+}
+
+.Weather .footnote {
+  font-size: 17px;
+}
+
 @media (max-width: 400px) {
   .Weather .location-button {
     margin-left: 40px;
@@ -132,4 +141,8 @@
   .Weather .weather-forecast-temperatures {
     margin-bottom: 20px;
   }
+  .Weather .footnote{
+    margin-left:8px;
+    font-size:16px
+}
 }

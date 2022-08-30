@@ -84,18 +84,38 @@ export default function Weather(props) {
         <div className="card-body pb-4">
           <WeatherInfo data={weatherData} />
         </div>
+        <div className="footnote pt-3">
+          <a
+            href="https://github.com/Joellez/weather-react"
+            className="github-link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Open-source code{" "}
+          </a>
+          by{" "}
+          <a
+            href="https://www.linkedin.com/in/joellezane/"
+            className="linkedin-link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Joelle Zane
+          </a>
+        </div>
       </div>
     );
   } else {
     search();
+    const style = {
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+    };
     return (
-      <div>
-        Loading...
-        <br />
-        <br />
-         <SpinnerCircularFixed size={90} thickness={180} speed={100} color="rgba(0, 0, 0, 1)" secondaryColor="rgba(255, 255, 255, 1)" />
-      <br />
-      <br />
+      <div style={style}>
+         <SpinnerCircularFixed size={90} thickness={180} speed={100} color="grey" secondaryColor="rgba(255, 255, 255, 1)" />
       </div>
     );
   }
