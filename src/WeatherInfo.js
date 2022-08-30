@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 import SingleCloud from "./images/singlecloud.png";
 import Sun from "./images/sun.png";
@@ -18,30 +19,8 @@ return (
           id="icon-head"
           className="icon-head"
         />
-
-        <span className="temperature" id="temp-number">
-          {Math.round(props.data.temperature)}
-        </span>
-        <span>
-          <a
-            href="https//www.google.com"
-            className="cTemp temperature active"
-            id="c-temp"
-          >
-            °c
-          </a>
-        </span>
-        <span class=" temperature">|</span>
-        <span>
-          {" "}
-          <a
-            href="https//www.google.com"
-            className="fTemp temperature"
-            id="f-temp"
-          >
-            °f
-          </a>
-        </span>
+<WeatherTemperature celsius={props.data.temperature} />
+        
         <hr className="hr-1" />
         <div class="weather-description text-capitalize">
           {props.data.description}
