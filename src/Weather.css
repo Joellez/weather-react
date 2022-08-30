@@ -5,7 +5,6 @@
   font-size: 18px;
 }
 
-
 .Weather .city-name {
   font-weight: bold;
   font-size: 21px;
@@ -30,7 +29,7 @@
 }
 .Weather .time,
 .Weather .date {
-  font-size: 20.4px;
+  font-size: 20.48px;
 }
 
 .Weather .more-weather {
@@ -72,39 +71,65 @@
   width: 75px;
 }
 
-
-
 @media (max-width: 400px) {
   .Weather .location-button {
-    margin-left:40px;
-  
+    margin-left: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .Weather{margin-top: -15px;}
-  .Weather .city-name{
+  .Weather {
+    margin-top: -15px;
+  }
+  .Weather .city-name {
     text-align: center;
     font-size: 19px;
   }
- .Weather .icon-head{margin-left: 18px;
-margin-bottom:-20px}
- .Weather .temperature{margin-left:13px;
-  font-size: 23px;}
-  .Weather .weather-description{text-align: center;}
-  .Weather hr.hr-1{margin-top:30px;}
-  .Weather .time{padding-top: 20px; text-align: center; margin-bottom: -30px; font-size:18px}
-  .Weather .date{text-align: center; margin-top: 5px; font-size: 18px;}
-  .Weather .date-time{border-bottom: 0.5px solid rgb(183, 181, 181); margin-bottom: 20px;}
-  .Weather hr.hr-2{display: none;}
-  .Weather .more-weather{font-size:16px; text-align: center;}
-  .Weather .wind-speed-answer{display: inline-block;}
- .Weather .forecast {margin-top: -20px;
-  margin-bottom: -10px;
-margin-left: 5px;}
-   .Weather .weather-forecast-temperatures{
-    margin-bottom:20px;
+  .Weather .icon-head {
+    margin-left: 18px;
+    margin-bottom: -20px;
+  }
+  .Weather .temperature {
+    margin-left: 13px;
+    font-size: 23px;
+  }
+  .Weather .weather-description {
+    text-align: center;
+  }
+  .Weather hr.hr-1 {
+    margin-top: 30px;
+  }
+  .Weather .time {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: -30px;
+    font-size: 18px;
+  }
+  .Weather .date {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .Weather .date-time {
+    border-bottom: 0.5px solid rgb(183, 181, 181);
+    margin-bottom: 20px;
+  }
+  .Weather hr.hr-2 {
+    display: none;
+  }
+  .Weather .more-weather {
+    font-size: 16px;
+    text-align: center;
+  }
+  .Weather .wind-speed-answer {
+    display: inline-block;
+  }
+  .Weather .forecast {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    margin-left: 5px;
+  }
+  .Weather .weather-forecast-temperatures {
+    margin-bottom: 20px;
   }
 }
-
-
