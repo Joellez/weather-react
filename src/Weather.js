@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 
 import { SpinnerCircularFixed } from "spinners-react";
@@ -83,6 +84,7 @@ export default function Weather(props) {
         <div className="card" />
         <div className="card-body pb-4">
           <WeatherInfo data={weatherData} />
+          <WeatherForecast />
         </div>
         <div className="footnote pt-3">
           <a
