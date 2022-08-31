@@ -1,10 +1,12 @@
 import React from "react";
 
+import  "./WeatherForecast.css"
+
 import SingleCloud from "./images/singlecloud.png";
 import Sun from "./images/sun.png";
 
 export default function WeatherForecast(){
-return (
+return ( // loop through 1 day 5 times when integrate with API instead of repeating code
   <div className="WeatherForecast">
     <div className="forecast pt-4">
       <div className="row five-day-weather">

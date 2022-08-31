@@ -41,36 +41,6 @@
   font-size: 18px;
 }
 
-.Weather .five-day-weather {
-  text-align: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  max-width: 100%;
-}
-
-.Weather .weather-forecast-day {
-  font-size: 17px;
-  text-align: center;
-}
-.Weather .weather-forecast-temperatures {
-  font-size: 15px;
-}
-.Weather .weather-forecast-min-temp {
-  opacity: 0.7;
-}
-.Weather .five-day-icons {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(147, 230, 241) 0%,
-    rgb(145, 192, 241) 45.5%
-  );
-  border: 0.5px dotted;
-  border-radius: 50%;
-  padding: 5px 5px;
-  margin-bottom: 8px;
-  width: 75px;
-}
-
 .Weather .github-link:hover,
 .Weather .linkedin-link:hover {
   color: #fff;
@@ -133,14 +103,7 @@
   .Weather .wind-speed-answer {
     display: inline-block;
   }
-  .Weather .forecast {
-    margin-top: -20px;
-    margin-bottom: -10px;
-    margin-left: 5px;
-  }
-  .Weather .weather-forecast-temperatures {
-    margin-bottom: 20px;
-  }
+  
   .Weather .footnote{
     margin-left:8px;
     font-size:16px
