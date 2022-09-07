@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 import  "./WeatherForecast.css"
 
-import SingleCloud from "./images/singlecloud.png";
-import Sun from "./images/sun.png";
+
 
 export default function WeatherForecast(props){
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 function handleResponse(response){
-  console.log(response.data);
   setForecast(response.data.daily);
   setLoaded(true);
 }
@@ -23,72 +22,7 @@ if (loaded) {
       <div className="forecast pt-4">
         <div className="row five-day-weather">
           <div className="col-md-2 forecast-info">
-            {" "}
-            <img
-              src={forecast[0].weather[0].icon}
-              className="five-day-icons"
-              alt="single cloud"
-            ></img>
-            <div className="weather-forecast-day">{forecast[0].dt}</div>
-            <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-max-temp">
-                {forecast[0].temp.max}°{" "}
-              </span>
-              <span className="weather-forecast-min-temp">
-                {" "}
-                {forecast[0].temp.min}°
-              </span>
-            </div>
-          </div>
-          <div className="col-md-2 forecast-info">
-            <img
-              src={SingleCloud}
-              className="five-day-icons"
-              alt="single cloud"
-            ></img>
-            <div className="weather-forecast-day">Sunday</div>
-            <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-max-temp">24° </span>
-              <span className="weather-forecast-min-temp">16°</span>
-            </div>
-          </div>
-          <div className="col-md-2 forecast-info">
-            {" "}
-            <img src={Sun} className="five-day-icons" alt="sun"></img>{" "}
-            <div className="weather-forecast-day">Monday</div>
-            <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-max-temp">24° </span>
-              <span className="weather-forecast-min-temp">18°</span>
-            </div>
-          </div>
-          <div className="col-md-2 forecast-info">
-            <img src={Sun} className="five-day-icons" alt="sun"></img>{" "}
-            <div className="weather-forecast-day">Tuesday</div>
-            <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-max-temp">25° </span>
-              <span className="weather-forecast-min-temp">17°</span>
-            </div>
-          </div>
-          <div className="col-md-2 forecast-info">
-            <img
-              src={SingleCloud}
-              className="five-day-icons"
-              alt="single cloud"
-            ></img>{" "}
-            <div className="weather-forecast-day">Wednesday</div>
-            <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-max-temp">30° </span>
-              <span className="weather-forecast-min-temp">19°</span>
-            </div>
-          </div>
-          <div className="col-md-2 forecast-info">
-            {" "}
-            <img src={Sun} className="five-day-icons" alt="sun"></img>
-            <div className="weather-forecast-day">Thursday</div>
-            <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-max-temp">22° </span>
-              <span className="weather-forecast-min-temp">18°</span>
-            </div>
+         <WeatherForecastDay data={forecast[0]}/>
           </div>
         </div>
       </div>
