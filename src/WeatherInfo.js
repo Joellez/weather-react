@@ -19,7 +19,7 @@ return (
 <WeatherTemperature celsius={props.data.temperature} />
         
         <hr className="hr-1" />
-        <div class="weather-description text-capitalize">
+        <div className="weather-description text-capitalize">
           {props.data.description}
         </div>
       </div>
