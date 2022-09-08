@@ -5,6 +5,8 @@
   font-size: 18px;
 }
 
+.Weather .btn:focus{background-color: none;}
+
 .Weather .city-name {
   font-weight: bold;
   font-size: 21px;

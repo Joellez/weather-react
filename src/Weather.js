@@ -39,6 +39,19 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
+function handleCurrentLocation(event) {
+  setCity(event.target.value);
+  function handlePosition(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const apiKey = "7ced214993840d6e67dd8feafce2738d";
+    const unit = "imperial";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+  navigator.geolocation.getCurrentPosition(handlePosition);
+}
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -73,9 +86,10 @@ export default function Weather(props) {
             </div>
             <div className="col-md-6">
               <button
-                type="submit"
+                type="button"
                 className="btn btn-light location-button"
                 id="location-button"
+                onClick={handleCurrentLocation}
               >
                 Use current location
               </button>
