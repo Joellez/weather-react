@@ -5,7 +5,9 @@
   font-size: 18px;
 }
 
-.Weather .btn-hover-bg{background-color: none;}
+.Weather .btn-hover-bg {
+  background-color: none;
+}
 
 .Weather .city-name {
   font-weight: bold;
@@ -103,12 +105,17 @@
     text-align: center;
     margin-left: 5px;
   }
+  .Weather .wind-speed {
+    margin-left: 15px;
+  }
   .Weather .wind-speed-answer {
     display: inline-block;
   }
-
-  .Weather .footnote{
-    margin-left:8px;
-    font-size:16px
-}
+  .Weather .humidity-answer {
+    display: inline-block;
+  }
+  .Weather .footnote {
+    margin-left: 8px;
+    font-size: 16px;
+  }
 }
