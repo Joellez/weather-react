@@ -44,8 +44,8 @@ function handleCurrentLocation(event) {
   function handlePosition(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const apiKey = "7ced214993840d6e67dd8feafce2738d";
-    const unit = "imperial";
+    const apiKey = "97250fbf79d302fc04bf2d8bd6da830f";
+    const unit = "metric";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`;
     axios.get(apiUrl).then(handleResponse);
   }
