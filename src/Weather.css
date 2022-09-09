@@ -5,7 +5,7 @@
   font-size: 18px;
 }
 
-.Weather .btn-light:focus, .btn-light:hover, .btn-light:visited {
+.Weather .btn-hover-bg, .btn-active-bg, .btn-light:focus, .btn-light:hover, .btn-light:visited {
   background-color: none !important;
 }
 
