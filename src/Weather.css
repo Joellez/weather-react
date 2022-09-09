@@ -5,8 +5,8 @@
   font-size: 18px;
 }
 
-.Weather .btn-hover-bg {
-  background-color: none;
+.Weather .btn:focus, .btn:hover {
+  background-color: none !important;
 }
 
 .Weather .city-name {
